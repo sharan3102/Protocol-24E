@@ -12,7 +12,7 @@
 }
 
 body {
-  background: url(../Images/Star\ BG\ in\ UI.png), url(../Images/Star\ BG\ in\ UI.png), url(../Images/Main\ BG.png), url(../Images/Main\ BG.png), url(../Images/Main\ BG.png), url(../Images/flare.png), url(../Images/giphy.gif), radial-gradient(rgba(0, 0, 0, 0.199), rgba(0, 0, 0, 0.226)), linear-gradient(180deg, #000000 11.08%, rgba(0, 0, 0, 0.654) 100%), #1D1D1D;
+  background: url(../Images/Star\ BG\ in\ UI.webp), url(../Images/Star\ BG\ in\ UI.webp), url(../Images/Main\ BG.webp), url(../Images/Main\ BG.webp), url(../Images/Main\ BG.webp), url(../Images/flare.png), url(../Images/giphy.gif), radial-gradient(rgba(0, 0, 0, 0.199), rgba(0, 0, 0, 0.226)), linear-gradient(180deg, #000000 11.08%, rgba(0, 0, 0, 0.654) 100%), #1D1D1D;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
