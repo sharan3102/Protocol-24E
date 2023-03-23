@@ -1,0 +1,435 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-size: 10px;
+}
+
+.wrapper {
+  background: radial-gradient(rgba(0, 0, 0, 0.199), rgba(0, 0, 0, 0.226));
+  padding: 4em 3rem;
+}
+
+body {
+  background: url(/Images/Star\ BG\ in\ UI.png), url(/Images/Star\ BG\ in\ UI.png), url(/Images/Main\ BG.png), url(/Images/Main\ BG.png), url(/Images/Main\ BG.png), url(/Images/flare.png), url(/Images/giphy.gif), radial-gradient(rgba(0, 0, 0, 0.199), rgba(0, 0, 0, 0.226)), linear-gradient(180deg, #000000 11.08%, rgba(0, 0, 0, 0.654) 100%), #1D1D1D;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: black;
+  height: 100vh;
+  color: white;
+}
+
+.primary {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  flex-direction: row !important;
+  align-items: center;
+  justify-content: center;
+  background: #FFFFFF;
+  border: 0.5px solid #FFFFFF;
+  border-radius: 3px;
+  padding: 0.8rem 0.5rem;
+  gap: 1rem;
+  width: 14rem;
+  height: 3.5rem;
+}
+
+.secondary {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  flex-direction: row !important;
+  align-items: center;
+  justify-content: center;
+  background: #131313;
+  color: white;
+  border: 0.5px solid #FFFFFF;
+  border-radius: 3px;
+  padding: 0.8rem 0.5rem;
+  gap: 1rem;
+  width: 14rem;
+  height: 3.5rem;
+}
+
+a {
+  font-size: inherit;
+  color: inherit;
+}
+
+a, button {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.svce-logo {
+  width: 12rem;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header ul {
+  font-family: "Space Grotesk", sans-serif;
+  list-style-type: none;
+  margin-top: 10em;
+  padding: 0;
+}
+header li {
+  padding: 0.8em 2em;
+  display: block;
+  font-size: large;
+  font-weight: 400;
+}
+header li:hover {
+  background-color: #181818;
+}
+header nav {
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  background-color: #000000;
+  width: 50%;
+  z-index: 999;
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in-out;
+}
+header .menu {
+  cursor: pointer;
+}
+header .btn-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+section {
+  min-height: 100vh;
+  margin-bottom: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.hero-section img {
+  width: 30rem;
+  height: 4rem;
+}
+.hero-section .landing-section {
+  gap: 0.5rem;
+  align-items: center;
+}
+.hero-section .landing-section p {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.425em;
+  text-transform: uppercase;
+  color: #C1C1C1;
+}
+.hero-section .landing-section .cta {
+  margin-top: 2rem;
+  flex-direction: row;
+  gap: 2rem;
+}
+.hero-section .landing-section .component-border {
+  border: white solid 1px;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 50px;
+  height: 5rem;
+  margin-top: 9rem;
+}
+.hero-section .landing-section .component {
+  margin: 5px;
+  background: white;
+  width: 17px;
+  height: 17px;
+  border-radius: 60%;
+  content: " ";
+  animation-name: component;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+h3 {
+  font-family: "Amatic SC", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 6rem;
+}
+
+.about-us .about {
+  gap: 3rem;
+}
+.about-us .about-content, .about-us .about {
+  align-items: center;
+}
+.about-us img {
+  width: 30rem;
+}
+.about-us .about-points {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  text-align: justify;
+  color: #D6D6D6;
+}
+.about-us .about-points li {
+  font-size: 1.3rem;
+  margin-top: 3em;
+}
+
+.location {
+  font-family: "DM Sans", sans-serif;
+  align-items: center;
+  gap: 4rem;
+}
+.location .location-content {
+  gap: 2.5rem;
+}
+.location .location-content iframe {
+  border-radius: 3px;
+  border: none;
+  height: 30rem;
+}
+.location .bigtext {
+  margin-bottom: 2rem;
+  font-size: 2.3rem;
+}
+.location .smalltext {
+  font-size: 1rem;
+  color: #D6D6D6;
+}
+
+h4 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+footer {
+  position: relative;
+  background-color: black;
+  padding: 3rem 2rem;
+  font-family: "DM Sans", sans-serif;
+}
+footer .flogo {
+  gap: 1rem;
+}
+footer .flogo p {
+  text-transform: capitalize;
+}
+footer .content {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+}
+footer .footer-content .flex {
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+footer .footer-content p {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: #9B9B9B;
+}
+footer .icon {
+  width: 1rem;
+}
+footer .flexrights {
+  font-weight: 400;
+  color: #9B9B9B;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 3rem;
+  gap: 1rem;
+}
+
+.section-title {
+  position: relative;
+  display: flex;
+}
+.section-title svg {
+  position: absolute;
+  right: -3rem;
+}
+
+.close {
+  float: right;
+  margin: 3.5em 2em 0 0;
+  cursor: pointer;
+}
+
+.open-nav {
+  transform: translateX(0%);
+}
+
+@keyframes component {
+  0% {
+    top: 0px;
+  }
+  50% {
+    margin-top: 26px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+@media (min-width: 680px) {
+  .wrapper, footer {
+    padding: 4em 8rem;
+  }
+}
+@media only screen and (min-width: 920px) {
+  .about-content {
+    flex-direction: row;
+  }
+  #contact .flexfoot {
+    display: flex;
+    flex: row;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+  #contact .content {
+    margin: 0;
+    gap: 10rem;
+  }
+  .wrapper, footer {
+    padding: 4em 9rem;
+  }
+  .svce-logo {
+    width: 18rem;
+  }
+  header {
+    align-items: center !important;
+    justify-content: space-between;
+    gap: 10rem;
+  }
+  .btn-menu {
+    display: none !important;
+  }
+  .menu {
+    display: none;
+  }
+  li {
+    padding: 0 !important;
+    font-weight: 600;
+    font-size: 1.5rem !important;
+  }
+  .hero-section img {
+    width: 45rem;
+    height: 4rem;
+  }
+  .hero-section .landing-section {
+    gap: 2rem;
+    align-items: center;
+  }
+  .hero-section .landing-section p {
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.425em;
+    text-transform: uppercase;
+    color: #C1C1C1;
+  }
+  nav {
+    transform: translateX(0) !important;
+    position: unset !important;
+    display: block !important;
+    width: auto !important;
+    height: auto !important;
+    justify-content: space-between !important;
+    background: none !important;
+  }
+  .close {
+    display: none;
+  }
+  ul {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .about-points ul {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .wrapper, footer {
+    padding: 4em 10rem;
+  }
+  .svce-logo {
+    width: 20rem;
+  }
+  .hero-section img {
+    width: 69rem;
+    height: 7rem;
+  }
+  .hero-section .landing-section {
+    gap: 2rem;
+    align-items: center;
+  }
+  .hero-section .landing-section p {
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.425em;
+    text-transform: uppercase;
+    color: #C1C1C1;
+  }
+  .primary, .secondary {
+    width: 18rem;
+    height: 5rem;
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 10rem;
+  }
+  .about-content img {
+    width: 60rem;
+  }
+  .about-points ul {
+    width: 50rem;
+  }
+  .location .bigtext {
+    font-size: 6rem;
+  }
+  .location .smalltext {
+    font-size: 3rem;
+    font-weight: 100;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .wrapper, footer {
+    padding: 6em 16rem;
+  }
+}/*# sourceMappingURL=style.css.map */
