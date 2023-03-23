@@ -1,5 +1,5 @@
 body{
-    background: url(../Images/Star\ BG\ in\ UI.png) no-repeat, url(../Images/dark-bg.jpeg);
+    background: url(./Images/Star\ BG\ in\ UI.png) no-repeat, url(./Images/dark-bg.jpeg);
     background-position: center;
     background-size: cover;
 }
