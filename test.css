@@ -1,0 +1,577 @@
+ul{
+    list-style-type: none;
+    margin-top: 5em;
+    padding: 0;
+}
+li{
+    padding: 0.8em 2em;
+    display: block;
+    font-weight: 400;  
+}
+li:hover{
+    background-color:#76D8B5;
+}
+nav{
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    background-color: #DDF0EA;
+    width: 50%;
+    z-index: 999;
+    transform: translateX(100%);
+    transition: transform .5s ease-in-out;
+}
+.menu{
+    cursor: pointer;
+}
+
+.btn-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+svg{
+    margin-left: 2em;
+    width: 1.5em;
+} 
+.close{
+    float: right;
+    margin: 1em 2em 0 0 ;
+    cursor: pointer;
+    width: 2em;
+}
+li a{
+    text-decoration: none;
+}
+li a:visited{
+    color: black;
+}
+#current{
+    background-color: #76D8B5;
+    font-size: 1.2rem;
+}
+#landingPage,.friends , .join-support{
+    padding: 0.5em 2em;
+    animation: welcomeAnimation 0.5s ease-in-out forwards;
+    opacity: 0;
+}
+p{
+    font-weight: 300;
+}
+a{
+    text-decoration: none;
+    font-weight: 600;
+    color: #3073DA;
+}
+.about-hero{
+    margin-bottom: 1.2em;
+    margin-top: 5%;
+    display: flex;
+    height: auto;
+    align-items: center;
+}
+.show-mobile{
+    margin-top: 3%;
+}
+.about-hero img{
+    /* width: 150px;
+    height: 70px; */
+    height: 3.125em;
+}
+.about-hero p{
+    margin-left: 0.7em;
+    font-size: 0.78rem;
+    line-height: 20.4px;
+}
+.main-text{
+    font-weight: 500; 
+}
+
+.highlight-bold{
+    font-weight: 500;
+    background-color: #DDF0EA;
+}
+#landingPage h4{
+    margin-bottom: 1.2em;
+}
+.text-vision p{
+    font-size: 0.70rem;
+    word-spacing: 2px;
+    line-height: 1.5em;
+}
+.quote{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    /* position:inherit; */
+    /* ovrflow: hidden; */
+}
+.box1{
+    border: 3.2px solid #697AFF;
+    width: 28px;
+    height: 25px;
+}
+.box2{
+    border: 3.2px solid #697AFF;
+    width: 18px;
+    height: 15px;
+    z-index: 2;
+    margin: -40px 0px 0px 21px;
+}
+.c1{
+    border: 4px solid #76D8B5;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+}
+.c2{
+    border: 4px solid #76D8B5;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    z-index: 3;
+    margin: -60px 20px 0px 13px;
+}
+.text-vision{
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+}
+.text-vision .quote{
+    margin-top: 0.7em;
+    /* margin: ; */
+    text-align: center;
+    font-size: 1.8rem;
+}
+.text-vision .quote p{
+    padding: 0.8em;
+    font-size: 1.1rem;
+}
+
+#landingPage h3{
+    margin:1em 0;
+}
+
+.approach p{
+    font-size: 0.70em;
+    word-spacing: 2px;
+    line-height: 1.5em;
+}
+.highlight{
+    background-color: #DDF0EA;
+}
+
+.main-content{
+    margin: 1.4em 0;
+    padding: 0.5em 2em;
+}
+.main-content h2{
+    font-size: 1em;
+    line-height: 1.5em;
+    font-weight: 400;
+}
+.main-content h3{
+    margin: 1.8em 0 20px 0;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    font-weight: 400;
+}
+.team p{
+    font-size: 0.70em;
+    word-spacing: 2px;
+    line-height: 1.5em;
+}
+.team{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.rolecnt{
+    display: flex;
+    margin: 30px 0 10px ;
+}
+.greenbox{
+    width: 12px;
+    height: 35px;
+    background-color: #DDF0EA;
+    margin-right: 15px;
+}
+.name{
+    font-weight: 400;
+
+}
+.experience{
+    font-size: 0.70em;
+    word-spacing: 2px;
+    line-height: 1.5em;
+    font-weight: 300;
+}
+.role{
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+
+.friends h3{
+    margin: 0 0 20px 0;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    font-weight: 400;
+}
+.friends p{
+    font-size: 0.8em;
+    word-spacing: 2px;
+    line-height: 1.5em;
+    font-weight: 300;
+}
+.join-support h3{
+    margin-top: 1em;
+}
+.join-role p{
+    /* margin: 1em 0; */
+    font-size: 0.7em;
+    word-spacing: 2px;
+    line-height: 1.5em;
+    font-weight: 300;
+}
+.no-shrink{
+    flex-shrink: 0;
+}
+.role-name{
+    background-color: #DDDDDD;
+    padding: 1em;
+    text-align: center;
+    flex-shrink: 0;
+    width: 70px;
+    margin: 1em;
+    height: 20px;
+}
+.mem{
+    display: flex;
+    align-items:center;
+    margin: 2em 0;
+    justify-content: space-between;
+    
+}
+.card{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: row-reverse;
+}
+.support h3{
+    
+    margin: 1em 0;
+}
+.support p{
+    font-size: 0.8em;
+    word-spacing: 2px;
+    line-height: 1.5em;
+    font-weight: 300;
+}
+.support-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+#contribute,.btn-cta{
+    /* float: right; */
+    background-color: #999999;
+    color: white;
+    border: none;
+    padding:0.5em;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0.8em 0 1.5em;
+}
+input{
+    text-transform: uppercase;
+    font-size: 10px;
+    padding: 1em;
+    width: 175px;
+    border: 2px solid #999999;
+    border-radius: 5px;
+    margin: 1.5em 0.8em 1em 0 ;
+}
+input::placeholder
+{
+    opacity: 0.4;
+}
+#subscribe-btn{
+    background-color: #999999;
+    color: white;
+    border: none;
+    width: 70px;
+    font-size: 0.8rem;
+    text-transform: capitalize;
+    padding:0.5em;
+    border-radius: 5px;
+}
+.open-nav{
+    transform: translateX(0%);
+}
+@media (min-width:680px){
+    
+    header img{
+        width: 20%;
+        margin-left: 1.2em;
+    }
+    #landingPage,.friends , .join-support ,.main-content{
+        padding: 0.8em 3em;
+    }
+    .about-hero p{
+        margin-left: 1.2em;
+        font-size: 0.9rem;
+        line-height: 20.4px;
+    }
+    .text-vision p{
+        font-size: 0.9rem;
+        word-spacing: 2px;
+        line-height: 1.5em;
+    }
+    .text-vision .quote p{
+        padding: 0.8em;
+        font-size: 1.8rem;
+    }
+    .approach p{
+        font-size: 0.9em;
+        word-spacing: 2px;
+        line-height: 1.5em;
+    }
+    .team p{
+        font-size: 0.9em;
+        word-spacing: 2px;
+        line-height: 1.5em;
+    }
+    .experience{
+        font-size: 0.8em;
+        word-spacing: 2px;
+        line-height: 1.5em;
+        font-weight: 300;
+    }
+    .join-role p{
+        /* margin: 1em 0; */
+        font-size: 0.9em;
+        word-spacing: 2px;
+        line-height: 1.5em;
+        font-weight: 300;
+    }
+    .support p{
+        font-size: 1em;
+        word-spacing: 2px;
+        line-height: 1.5em;
+        font-weight: 300;
+    }
+}
+@media only screen and (min-width:920px){
+    header img{
+        width: 12%;
+        margin-left: 2.9em;
+    }
+    .menu{
+        display: none;
+    }
+    .about-hero img{
+        width: 30%;
+        height: 6em;
+        flex-shrink: 0;
+    }
+    li{
+        font-weight: 600;
+    }
+    li:hover{
+        /* text-decoration: underline; */
+        background: #DDDDDD;
+        border-radius: 10px;
+    }
+    #current{
+        background:none;
+        font-size: 1rem;
+        text-decoration: underline;
+        text-transform: uppercase;
+        text-underline-offset: 0.8em;
+        text-decoration-thickness: 0.1em;
+    }
+    nav{
+        transform: translateX(0);
+        position: unset;
+        display: block;
+        width: auto;
+        height: auto;
+        background:none;
+    }
+    .close{
+        display: none;
+    }
+    ul{
+        display: flex;
+        margin: 0;
+    }
+    li:hover{
+        /* text-decoration: underline; */
+        background: #DDDDDD;
+        border-radius: 10px;
+    }
+    .team p{
+        font-size: 1em;
+        word-spacing: 2px;
+        line-height: 1.5em;
+    }
+    .experience{
+        font-size: 0.9em;
+        margin-top: 2em;
+        word-spacing: 2px;
+        line-height: 1.5em;
+        font-weight: 300;
+    }
+    .friends p{
+        font-size: 1em;
+    }
+    h1,h2,h3,h4{
+        font-size: 1.5em;
+    }
+    .main-content h3{
+        font-size: 1.5em;
+    }
+    .join-role p{
+        /* margin: 1em 0; */
+        font-size: 1em;
+        word-spacing: 2px;
+        line-height: 1.5em;
+        font-weight: 300;
+    }
+    .support p{
+        font-size: 1em;
+        word-spacing: 2px;
+        line-height: 1.5em;
+        font-weight: 300;
+    }
+    .about-hero{
+        margin-bottom: 1.8em;
+    }
+    .team{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        gap: 1.3em;
+        /* margin-bottom: 8em; */
+        /* grid-template-rows: repeat(3, 1fr);
+         grid-column-gap: 1em;
+        grid-row-gap: 2em;  
+        gap: 2em; */
+    }
+    
+    .team p {  grid-area: 1 / 1 / 2 / 3; }
+    .team-member1{ grid-area: 1 / 3 / 3 / 5;  }
+    .team-member2{  grid-area: 2 / 1 / 4 / 3; }
+    .team-member3{ grid-area: 3 / 3 / 5 / 5; } 
+    
+    .hide-desktop{
+        display: none;
+    }
+    .join-role{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        /* overflow: hidden; */
+    }
+    .join-role p{
+        font-size: 0.8em;
+        word-spacing: 2px;
+        line-height: 1.5em;
+        font-weight: 300;
+    }    
+    .mem{
+        display: flex;
+        flex-wrap: nowrap;
+        margin: 0 1em 0 0;
+    }
+    .role-name{
+    padding: 1em;
+    text-align: center;
+    flex-shrink: 0;
+    width: 100px;
+    /* margin: 1em; */
+    height: 20px;
+
+    }
+    .join-role{
+        margin: 2em 0;
+    }
+    .card{
+        flex-direction: column;
+        flex-wrap: wrap;
+        /* margin: 0 0.9em 0 0 ; */
+    }
+    #landingPage,.friends , .join-support ,.main-content{
+        padding: 0.8em 5em;
+    }
+    .about-hero p{
+        margin-left: 0.9em;
+        font-size: 1.1rem;
+        line-height: 22px;
+    }
+    .support-container{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    .subs{
+        margin: 0 0 0 3em;
+    }
+    .text-vision{
+        margin: -1em 0 0 0 ;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .text-vision p{
+        font-size: 0.9rem;
+        word-spacing: 2px;
+        line-height: 1.5em;
+    }
+    .quote{
+        margin: 0 0 0 3em;
+        flex-shrink: 0;
+    }
+    .text-vision .quote p{
+        padding: 0.8em;
+        font-size: 1.5rem;
+    }
+    .approach p{
+        font-size: 1em;
+        word-spacing: 2px;
+        line-height: 1.5em;
+    }
+    .approach{
+        display: flex;
+        justify-content: space-between;
+        gap: 3em;
+    }
+
+}
+@media only screen and  (min-width:1150px){
+    
+    .about-hero img{
+        width: 25%;
+        height: 6em;
+        flex-shrink: 0;
+    }
+    .about-hero{
+        gap: 4em;
+    }
+    .abt-wrapper{
+        width: 1250px;
+        margin: 0 auto;
+    }
+}
+@keyframes welcomeAnimation {
+    from{
+        transform: translateY(-30px);
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
